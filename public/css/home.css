@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+}
+
+/* Top Card Section */
+.top-card-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.top-card-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.top-card-text {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+
+.top-card-text h1 {
+    font-size: 2.3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.top-card-text p {
+    font-size: 1rem;
+    color: white;
+    max-width: 65%;
+}
+
+.custom-button {
+    background-color: white;
+    color: #0D92F4;
+    border: 2px solid #0D92F4;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.custom-button:hover {
+    background-color: #0D92F4;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tambahkan jarak antar bagian utama */
+.section-container {
+    margin-top: 80px; /* Jarak atas antar bagian */
+    margin-bottom: 80px; /* Jarak bawah antar bagian */
+}
+
+.section-container p {
+    margin-bottom: 60px; /* Memberikan jarak bawah pada paragraf */
+}
+
+/* Styling for Three Cards Section */
+.card-container {
+    margin: 40px 0;
+}
+
+.service-icon {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.card-container .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    outline: 3px solid #007bff;
+}
+
+.card-container .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-container .card-text {
+    font-size: 1rem;
+    color: #666;
+}

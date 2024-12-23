@@ -1,0 +1,89 @@
+/* Navbar Styling */
+.navbar-brand {
+    margin-left: 25px;
+    color: #0D92F4;
+    font-size: 1.8rem;
+    font-weight: bold !important;
+}
+
+.navbar-brand:hover {
+    color: #0056b3;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+    background-color: #0D92F4;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 50px;
+}
+
+.navbar-nav {
+    margin-right: 50px;
+}
+
+/* Adjust main content styling */
+main {
+    flex-grow: 1; /* Make the main content flexible to fill space */
+}
+
+/* Navigation link hover effects */
+.nav-link {
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.bi-person-circle {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover .bi-person-circle {
+    color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0D92F4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #0056b3;
+}
+
+/* Ensure the page layout has proper structure */
+html, body {
+    height: 100%; /* Ensure the entire page takes full height */
+    margin: 0; /* Remove default margin */
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
