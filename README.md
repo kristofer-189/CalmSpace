@@ -2,7 +2,7 @@
 
 ### Welcome to CalmSpace
 
-    Take a moment to relax, breathe, and enjoy insightful articles tailored for your mental well-being.
+Take a moment to relax, breathe, and enjoy insightful articles tailored for your mental well-being.
 
 ### Why Mental Health Matters
 
