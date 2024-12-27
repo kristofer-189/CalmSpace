@@ -24,8 +24,6 @@ Route::get('/contact', function () {
 // Authentication routes
 Auth::routes();
 
-Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
-
 // Protected routes (require authentication)
 Route::middleware('auth')->group(function () {
     Route::get('/consult', [HomeController::class, 'consult'])->name('consult');
