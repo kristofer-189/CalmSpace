@@ -6,8 +6,8 @@
     },
     "routes": [
         {
-            "src": "/images/(.*)",
-            "dest": "/api/images.php"
+            "src": "/images/(.*)$",
+            "dest": "/api/images.php?file=$1"
         },
         {
             "src": "/(.*)",
