@@ -9,6 +9,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/home', function () {
+    return view('home');
+});
+
 Route::get('/article', function () {
     return view('article');
 })->name('article');
@@ -24,13 +28,15 @@ Route::get('/contact', function () {
 // Authentication routes
 Auth::routes();
 
+Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
+
 // Protected routes (require authentication)
 Route::middleware('auth')->group(function () {
     Route::get('/consult', [HomeController::class, 'consult'])->name('consult');
     Route::get('/articles', [HomeController::class, 'articles'])->name('articles');
     Route::get('/mood-tracker', [MoodTrackerController::class, 'index'])->name('mood-tracker.index');
     Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
-    Route::post('/logout', [HomeController::class, 'logout'])->name('logout');
+    Route::post('/logout', [HomeController::class, 'logout']); //->name('logout');
 
     // Mood Tracker routes
     Route::post('/mood-tracker/save', [MoodTrackerController::class, 'store'])->name('mood-tracker.save');
