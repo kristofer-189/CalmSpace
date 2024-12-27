@@ -4,12 +4,16 @@
     "functions": {
         "api/*.php": { "runtime": "vercel-php@0.7.3" }
     },
-    "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/public/$1"
-    }
-  ],
+    "routes": [
+        {
+            "src": "/images/(.*)",
+            "dest": "/api/images.php"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
