@@ -54,5 +54,3 @@ use App\Http\Controllers\PaymentController;
 
 Route::get('/payment', [PaymentController::class, 'payment'])->name('payment');
 Route::post('/payment/process', [PaymentController::class, 'process'])->name('payment.process');
-
-

@@ -8220,7 +8220,6 @@
         "laravel/pail",
         "laravel/pint",
         "laravel/sail",
-        "laravel/ui",
         "mockery/mockery",
         "myclabs/deep-copy",
         "nunomaduro/collision",
