@@ -7,7 +7,7 @@
 @section('content')
 <!-- Top Card Section -->
 <div class="top-card-section">
-    <img src="/images/f5.png" alt="Background Image">
+    <img src={{asset("/images/f5.png")}} alt="Background Image">
     <div class="top-card-text">
         <h1>Welcome to CalmSpace</h1>
         <p>Take a moment to relax, breathe, and enjoy insightful articles tailored for your mental well-being.</p>
