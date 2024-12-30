@@ -50,7 +50,7 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->get('/profile', [MoodTrackerController::class, 'profile'])->name('profile');
 
-Route::post('/profile/clear-mood-history', [MoodTrackerController::class, 'clearMoodHistory'])->name('clear-mood-history');
+Route::get('/profile/clear-mood-history', [MoodTrackerController::class, 'clearMoodHistory'])->name('clear-mood-history');
 
 // routes/web.php
 
